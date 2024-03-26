@@ -25,8 +25,8 @@ namespace RogueLike_1._0._0_demo.map
             bool[,] map = new bool[config.map_width, config.map_height];
             initialize_map(map);
 
-            Position start = get_position_by_id(config.player_id);
-            Position finish = get_position_by_id(config.finish_id);
+            Position start = get_position_by_id(config.id_player);
+            Position finish = get_position_by_id(config.id_finish);
 
             carve_passages_from(start, map);
             ensure_finish_is_accessible(finish, map);

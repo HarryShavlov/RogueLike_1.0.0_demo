@@ -19,7 +19,7 @@ namespace RogueLike_1._0._0_demo.data.game_objects.dynamic_object
         public Position position { get => obj.position; private set => obj.position = value; }
         public bool passable { get => obj.passable; private set => obj.passable = value; }
 
-        public void Move(Direction direction, Func<Position, bool> canMove)
+        public void move(Direction direction, Func<Position, bool> canMove)
         {
             Position new_position = position.new_position(direction);
 

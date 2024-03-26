@@ -2,9 +2,11 @@
 using RogueLike_1._0._0_demo.data.game_core.collision_manager;
 using RogueLike_1._0._0_demo.data.game_core.game_loop;
 using RogueLike_1._0._0_demo.data.game_core.game_scene_manager;
+using RogueLike_1._0._0_demo.data.game_initializer;
 using RogueLike_1._0._0_demo.data.game_render;
 using RogueLike_1._0._0_demo.map;
 using RogueLike_1._0._0_demo.settings.config;
+using RogueLike_1._0._0_demo.settings.controller_manager;
 class Program
 {
     static void Main()
@@ -20,13 +22,13 @@ class Program
 
         ICollisionManager collisionManager = new CollisionManager(game_scene);
 
-        IGameController gameController = new GameController(config, game_scene, collisionManager);
+        IControllerManager controller_manager = new ControllerManager(config, game_scene, collisionManager);
 
 
         IGameRender gameRender = new GameRender(game_scene, config);
-        IGameInitializer initializer = new GameInitializer(config, game_scene, prefs, map_generator);
-        IGameLoop gameLoop = new GameLoop(config, collisionManager, gameRender, gameController, initializer, game_scene);
+        IGameInit initializer = new GameInit(config, game_scene, prefs, map_generator);
+        IGameLoop gameLoop = new GameLoop(config, collisionManager, gameRender, controller_manager, initializer, game_scene);
 
-        gameLoop.Run();
+        gameLoop.run();
     }
 }

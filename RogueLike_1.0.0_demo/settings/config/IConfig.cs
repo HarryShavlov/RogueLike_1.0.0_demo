@@ -11,12 +11,12 @@ namespace RogueLike_1._0._0_demo.settings.config
         int map_width { get; }
         int map_height { get; }
 
-        Guid player_id { get; }
-        Guid finish_id { get; }
+        public Guid id_player { get; }
+        public Guid id_finish { get; }
         bool game_over { get; }
 
-        void set_player_id(Guid player_id);
-        void set_finish_id(Guid finish_id);
-        bool change_game_status();
+        public void set_player_id(Guid playerId);
+        public void set_finish_id(Guid finishId);
+        public bool change_game_status();
     }
 }
