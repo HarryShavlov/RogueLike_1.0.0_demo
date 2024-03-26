@@ -8,5 +8,6 @@ namespace RogueLike_1._0._0_demo.data.game_render
 {
     public interface IGameRender
     {
+        void render();
     }
 }

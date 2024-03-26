@@ -8,5 +8,7 @@ namespace RogueLike_1._0._0_demo.data.game_initializer
 {
     public interface IGameInit
     {
+        void init();
     }
+
 }

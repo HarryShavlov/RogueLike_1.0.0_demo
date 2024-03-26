@@ -8,5 +8,6 @@ namespace RogueLike_1._0._0_demo.settings.controller_manager
 {
     public interface IControllerManager
     {
+        void process_input(ConsoleKey key);
     }
 }
