@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RogueLike_1.0.0_demo", "RogueLike_1.0.0_demo\RogueLike_1.0.0_demo.csproj", "{1E019A00-45B9-49A9-8DC4-7F717B63B4C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E019A00-45B9-49A9-8DC4-7F717B63B4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E019A00-45B9-49A9-8DC4-7F717B63B4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E019A00-45B9-49A9-8DC4-7F717B63B4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E019A00-45B9-49A9-8DC4-7F717B63B4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D57A42F-EDDB-4A7D-B115-E9A0E3B7289D}
+	EndGlobalSection
+EndGlobal
